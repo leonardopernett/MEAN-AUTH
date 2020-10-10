@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col-md-6 mx-auto mt-5">
+   
+ 
+     <div class="card">
+       <div class="card-header">Signup</div>
+        <p class="text-danger mx-2" *ngIf="errores">
+          {{errores}}
+        </p>
+       <div class="card-body">
+           <form #signupForm="ngForm" (submit)="signup(signupForm)">
+              <div class="form-group">
+                  <input type="text"  [(ngModel)]="user.email" name="email" class="form-control" placeholder="e-mail">
+              </div>
+              <div class="form-group">
+                <input type="password" #password  [(ngModel)]="user.password" name="password" class="form-control" placeholder="*****">
+            </div>
+             <button class="btn btn-primary btn-block">register</button>
+           </form>
+
+       </div>
+     </div>
+  </div>
+</div>

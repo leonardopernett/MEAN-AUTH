@@ -1,0 +1,15 @@
+
+@api = http://localhost:3000
+
+####
+POST {{api}}/signin
+Content-Type: application/json
+
+{
+  "email":"leo@admin.com",
+  "password":"123456"
+}
+
+###
+GET  {{api}}/api/private-tasks
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmN2UzOGI4NTY2YmY5MjZmNDQzNGUwMiIsImlhdCI6MTYwMjExMTA1MCwiZXhwIjoxNjAyMTE0NjUwfQ.hxhh-7TdQpzEEffWusksP5VSNgmGDrXv-mJ_8rcbaSE
